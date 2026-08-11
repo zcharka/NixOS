@@ -16,7 +16,7 @@
       ./DE/plasma.nix
 #       ./DE/gnome.nix
 #       ./DE/cosmic.nix
-      ./DE/hyprland.nix
+#       ./DE/hyprland.nix
     ];
 
   networking.hostName = "nixos";
