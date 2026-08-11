@@ -29,6 +29,6 @@ services = {
     gnome.core-apps.enable = true;
     gnome.core-developer-tools.enable = false;
     gnome.games.enable = false;
-    displayManager.gdmm.enable = true;
+    displayManager.gdm.enable = true;
 };
 }
