@@ -13,6 +13,4 @@
   kitty
   rofi
   ];
-
-  services.displayManager.sddm.enable = true;
 }
