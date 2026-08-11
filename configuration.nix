@@ -13,7 +13,7 @@
       ./etc.nix
       ./network.nix
 # środowiska graficzne
-      ./greeter.nix
+      ./DE/greeter.nix
       ./DE/plasma.nix
 #       ./DE/gnome.nix
 #       ./DE/cosmic.nix
