@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  nixpkgs.config.allowUnfree = true;
 
   hardware.graphics = {
     enable = true;
@@ -60,7 +59,7 @@
 
   swapDevices = [
   {
-    device = "/var/lib/swapfile"; size = 8192;;
+    device = "/var/lib/swapfile"; size = 8192;
   }
 ];
 }
