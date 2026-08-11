@@ -2,23 +2,9 @@
 
 {
 
-  networking = {
-    hostName = "nixos";
-    networkmanager.enable = true;
-    firewall.enable = false;
-    enableIPv6 = false;
-    dhcpcd.wait = "background";
-    dhcpcd.extraConfig = "noarp";
-    nameservers = [ "1.1.1.1" "1.0.0.1" ];
-    nftables.enable = true;
-  };
-  systemd.services.NetworkManager-wait-online.enable = false; # Nie czekaj na internet by uruchomić system
-
-  services.zerotierone = {
-    enable = false;
-    joinNetworks = [""];
-    };
-
+  networking.hostName = "nixos";
+  # networking.wireless.enable = true;
+  networking.networkmanager.enable = true;
   time.timeZone = "Europe/Warsaw";
   i18n.defaultLocale = "pl_PL.UTF-8";
 
