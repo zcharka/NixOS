@@ -7,10 +7,11 @@
       ./hardware.nix
       ./bootloader.nix
       ./users.nix
-      ./programy.nix
-      ./serwisy.nix
+      ./programs.nix
+      ./services.nix
       ./audio.nix
       ./etc.nix
+      ./network.nix
 # środowiska graficzne
       ./DE/plasma.nix
 #       ./DE/gnome.nix
