@@ -18,7 +18,7 @@
 #       ./DE/gnome.nix
 #       ./DE/cosmic.nix
 #       ./DE/hyprland.nix
-        ./DE/cinammon.nix
+#        ./DE/cinammon.nix
     ];
 
   system.stateVersion = "26.05";
