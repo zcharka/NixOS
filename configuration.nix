@@ -13,6 +13,7 @@
       ./network.nix
 # użytkownicy
       ./users/sebastian.nix
+#       ./users/test.nix
 # środowiska graficzne
       ./DE/greeter.nix
       ./DE/plasma.nix
