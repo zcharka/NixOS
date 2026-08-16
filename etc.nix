@@ -1,7 +1,5 @@
 { config, pkgs, ... }:
-
 {
-
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # programs.mtr.enable = true;
@@ -15,6 +13,8 @@ environment.sessionVariables = {
     "/var/lib/flatpak/exports/share"
     "/home/sebastian/.local/share/flatpak/exports/share"
   ];
+  XCURSOR_THEME = "Bibata-Modern-Classic";
+  XCURSOR_SIZE = "24";
 };
 
   xdg.portal = {
