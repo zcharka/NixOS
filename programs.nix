@@ -36,6 +36,7 @@
   blender
   anydesk
   git
+  bibata-cursors
 
   (python3.withPackages (python-pkgs: with python-pkgs; [
         pip
