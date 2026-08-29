@@ -103,6 +103,14 @@ programs = {
     clean.extraArgs = "--keep-since 4d --keep 3";
     flake = "/etc/nixos";
   };
+
+  fish = {
+    enable = true;
+    shellAliases = {
+      nhs = "nh os switch -a /etc/nixos";
+      nhu = "nh os switch -a /etc/nixos --update";
+};
+};
 };
 
 virtualisation.libvirtd = {
