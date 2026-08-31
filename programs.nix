@@ -65,6 +65,7 @@
   enable = true;
   packages = [
     "app.zen_browser.zen"
+    "com.opera.Opera"
   ];
 };
 
