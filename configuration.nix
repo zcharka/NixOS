@@ -21,6 +21,9 @@
 #       ./DE/cosmic.nix
 #       ./DE/hyprland.nix
 #        ./DE/cinammon.nix
+# hosta
+      ./host/dell-g15/default.nix
+      ./host/surface-book-2/default.nix
     ];
 
   system.stateVersion = "26.05";
