@@ -15,6 +15,11 @@
       url = "github:NixOS/nixos-hardware";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    caelestia-shell = {
+      url = "github:caelestia-dots/shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -23,6 +28,7 @@
     kwin-effects-better-blur-dx,
     nix-flatpak,
     nixos-hardware,
+    caelestia-shell,
     ...
   }:
   let
@@ -34,7 +40,7 @@
         inherit system;
 
         specialArgs = {
-          inherit kwin-effects-better-blur-dx;
+          inherit kwin-effects-better-blur-dx caelestia-shell;
         };
 
         modules = [

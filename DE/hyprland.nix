@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, caelestia-shell, ... }:
 
 {
   programs.waybar.enable = true;
@@ -12,5 +12,6 @@
   environment.systemPackages = with pkgs; [
   kitty
   rofi
+  caelestia-shell.packages.${pkgs.system}.with-cli
   ];
 }
