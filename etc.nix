@@ -22,12 +22,6 @@ environment.sessionVariables = {
   extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
 };
 
-nix.gc = {
-  automatic = true;
-  dates = "daily";
-  options = "--delete-older-than 7d";
-};
-
   nix.settings.auto-optimise-store = true;
 
   console.keyMap = "pl2";
