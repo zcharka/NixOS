@@ -110,8 +110,9 @@ programs = {
     shellAliases = {
       nhs = "nh os switch -a /etc/nixos";
       nhu = "nh os switch -a /etc/nixos --update";
-};
-};
+    };
+  };
+  
 };
 
 virtualisation.libvirtd = {
