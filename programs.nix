@@ -66,6 +66,7 @@
   packages = [
     "app.zen_browser.zen"
     "com.opera.Opera"
+    "org.vinegarhq.Sober"
   ];
 };
 
