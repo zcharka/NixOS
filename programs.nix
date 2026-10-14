@@ -37,6 +37,8 @@
   anydesk
   git
   bibata-cursors
+  android-tools
+  codex
 
   (python3.withPackages (python-pkgs: with python-pkgs; [
         pip
