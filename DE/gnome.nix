@@ -2,6 +2,18 @@
 
 {
 
+  programs.dconf.profiles.user.databases = [{
+    settings."org/gnome/desktop/applications/terminal" = {
+      exec = "blackbox";
+      exec-arg = "";
+    };
+  }];
+
+  programs.nautilus-open-any-terminal = {
+    enable = true;
+    terminal = "blackbox";
+  };
+
     environment.systemPackages = with pkgs; [
 
     gnome-tweaks
@@ -22,6 +34,7 @@
 
 environment.gnome.excludePackages = with pkgs; [
     seahorse
+    gnome-console
     ];
 
 services = {
