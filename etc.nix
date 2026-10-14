@@ -40,6 +40,7 @@ networking = {
         (python-final: python-prev: {
           paste = python-prev.paste.overridePythonAttrs (_old: {
             doCheck = false;
+            meta.broken = false;
           });
         })
       ];
@@ -48,6 +49,8 @@ networking = {
   environment.shellAliases = {
   nhs = "nh os switch -a /etc/nixos";
   nhu = "nh os switch -a /etc/nixos --update";
+  nhrm = "nh clean all";
+  caelestia = "caelestia-shell";
 };
 
 }
