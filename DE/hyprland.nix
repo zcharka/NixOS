@@ -12,6 +12,14 @@
   environment.systemPackages = with pkgs; [
   kitty
   rofi
-  caelestia-shell.packages.${pkgs.system}.with-cli
+  libpulseaudio
+  pulseaudio
+  swaynotificationcenter
+  wlogout
+  pavucontrol
+  hyprpaper
+  discordo
+  inputs.superfile.packages.${system}.default
+#  caelestia-shell.packages.${pkgs.system}.with-cli
   ];
 }
